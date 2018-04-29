@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_search_view"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_view_height"
+    android:paddingLeft="8dp"
+    android:paddingRight="@dimen/search_view_padding_right"
+    android:paddingTop="@dimen/search_view_padding_top"
+    android:paddingBottom="@dimen/search_view_padding_bottom"
+    android:gravity="center_vertical"
+    tools:background="@color/default_background">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/btn_back_margin_right"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_back"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@drawable/search_view_background">
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_search_gray"
+            android:background="@null"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:textSize="@dimen/edit_text_size"
+            android:textColor="@color/edit_text"
+            android:textColorHint="@color/edit_hint_text"
+            android:hint="@string/edit_hint"/>
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_clear"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/btn_clear_margin_left"
+        android:background="@color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_cancel_text"
+        android:textSize="@dimen/btn_cancel_text_size"
+        android:text="@string/btn_cancel_text"/>
+
+</LinearLayout>

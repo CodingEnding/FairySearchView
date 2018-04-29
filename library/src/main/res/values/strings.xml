@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">library</string>
+    <string name="edit_hint">请输入查询关键词</string>
+    <string name="btn_cancel_text">取消</string>
+</resources>
