@@ -75,7 +75,7 @@ dependencies {
 ### 相关属性
 
 | 属性名  | 类型  | 默认值 | 说明 |
-| :---------- |:-------|: -----|: -----|
+| :---------- |:-------|:-----|:-----|
 | app:searchViewHeight | dimension | 52dp | 中间输入区域的高度 |
 | app:maxSearchLength | integer | x | 输入框的最大文字长度 |
 | app:showBackButton | boolean | false | 是否显示左侧返回按钮 |
@@ -120,7 +120,7 @@ fairySearchView.setOnClearClickListener(new FairySearchView.OnClearClickListener
 });
 ```
 
-**说明：**默认情况下点击清除按钮会清空输入框中的内容，如果没有特殊的需求请不要设置这个监听器。
+**说明：** 默认情况下点击清除按钮会清空输入框中的内容，如果没有特殊的需求请不要设置这个监听器。
 
 **监听右侧取消按钮的点击事件：**
 
@@ -160,7 +160,7 @@ fairySearchView.setOnEnterClickListener(new FairySearchView.OnEnterClickListener
 FairySearchView为大部分属性提供了对应的getter/setter方法，下面列出其中的一部分，其他的方法也基本类似。
 
 | 方法名  | 返回值| 说明 |
-| :---------|: -----|: -----|
+| :---------|:-----|:-----|
 | setSearchText(String text) | void | 设置输入内容 |
 | getSearchText | string | 获得输入内容 |
 | setSearchTextSize(int searchTextSize) | void | 设置输入文字大小（px） |
