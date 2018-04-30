@@ -5,4 +5,7 @@
     <color name="edit_hint_text">#aaa</color>
     <color name="btn_cancel_text">#fff</color>
     <color name="transparent">#00000000</color>
+
+    <color name="edit_background">#fff</color>
+    <color name="edit_stroke">#fff</color>
 </resources>
