@@ -17,16 +17,51 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:contentInsetStart="0dp">
 
+        <!-- 显示所有的控件 -->
         <com.codingending.library.FairySearchView
             android:id="@+id/search_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:maxSearchLength="5"
+            app:maxSearchLength="100"
             app:searchViewHeight="55dp"
             app:showSearchIcon="true"
             app:showBackButton="true"
             app:showClearButton="true"
             app:showCancelButton="true" />
+
+        <!-- 不显示左侧返回按钮 -->
+        <!--<com.codingending.library.FairySearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:searchViewHeight="55dp"
+            app:showSearchIcon="true"
+            app:showBackButton="false"
+            app:showClearButton="true"
+            app:showCancelButton="true" />-->
+
+        <!-- 不显示右侧取消按钮 -->
+        <!--<com.codingending.library.FairySearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:searchViewHeight="55dp"
+            app:showSearchIcon="true"
+            app:showBackButton="true"
+            app:showClearButton="true"
+            app:showCancelButton="false" />-->
+
+        <!-- 不显示左侧返回按钮、右侧取消按钮 -->
+       <!-- <com.codingending.library.FairySearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:searchViewHeight="55dp"
+            app:showSearchIcon="true"
+            app:showBackButton="false"
+            app:showClearButton="true"
+            app:showCancelButton="false" />-->
 
     </android.support.v7.widget.Toolbar>
     
